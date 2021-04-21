@@ -53,3 +53,8 @@
     font-size: 20px;
 
 }
+
+.todo-list li .delete {
+    float: right;
+    cursor: pointer;
+}

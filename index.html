@@ -28,18 +28,20 @@
 
             <!--input todo-->
             <div class="new-todo">
-                <input type="text" class="text-input" placeholder="Nuovo To-Do">
-                <button class="btn">Aggiungi</button>
+                <input v-model="userNewValue" @keyup.enter="addNewTodo" type="text" class="text-input" placeholder="Nuovo To-Do">
+                <button class="btn" @click="addNewTodo">Aggiungi</button>
             </div>
             <!--fine input todo-->
 
             <!--lista todo-->
             <div class="todo-container">
-                <ul class="todo-list">
-                    <li>
-                        Fai la spesa
+                <ul v-if="to_dos.length > 0" class="todo-list">
+                    <li v-for="(todo, index) in to_dos">
+                        {{todo}}
+                        <span class="delete" @click="deleteTodo(index)"><i class="fa fa-times"></i></span>
                     </li>
                 </ul>
+                <div v-else>Non ci sono To-Do da mostrare</div>
             </div>
             <!--fine lista todo-->
         </div>
