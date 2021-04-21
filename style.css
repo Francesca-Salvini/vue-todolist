@@ -5,3 +5,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 70%;
+    margin: auto;
+
+}
+
+.logo img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.new-todo {
+    text-align: center;
+    padding: 5%;
+}
+
+.text-input {
+    padding: 10px 20px;
+    min-width: 300px;
+    border-radius: 12px;
+    border: 1px solid grey;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.todo-container {
+    background-color: #F5F7F7;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-list li {
+    padding : 7px 5px;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+
+}
