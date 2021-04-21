@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     max-width: 70%;
     margin: auto;
@@ -16,6 +20,7 @@
     width: 200px;
     display: block;
     margin: auto;
+    padding-top: 3%;
 }
 
 .new-todo {
@@ -50,7 +55,7 @@
 .todo-list li {
     padding : 7px 5px;
     border-bottom: 1px solid grey;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
